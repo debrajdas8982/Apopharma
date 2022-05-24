@@ -1,0 +1,160 @@
+/* stylelint-disable */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  height: 80vh;
+  width: 100%;
+  max-width: 540px;
+  margin: 50px auto 0;
+  padding: 20px;
+}
+
+.important {
+  width: 100%;
+  margin-bottom: 1.6rem;
+  font-size: 1rem;
+}
+
+.information {
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.scan {
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.scan-btn {
+  background-color: #a5e0d5;
+  box-shadow: 0 4px 4px 0 #00000026;
+  border-radius: 20px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.15rem;
+  display: inline-block;
+  min-width: 120px;
+  height: 100px;
+  padding: 0 1rem 0 1rem;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.scan-btn:hover {
+  background-color: #05a98b;
+}
+
+.search {
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+.icon {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+
+.search-input {
+  background: #fff;
+  border: 1px solid #05a98b;
+  box-sizing: border-box;
+  box-shadow: 0 2px 1px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.scan-text {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.qr-scan-window {
+  position: absolute;
+  z-index: 10000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(51, 51, 51, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.qr-scan-window-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.qr-scan-camera-container {
+  overflow: hidden;
+  border-radius: 1em;
+  height: 200px;
+  width: 200px;
+}
+
+.qr-scan-camera-text {
+  color: white;
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.qr-scan-window-header {
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.qr-scan-header-back-btn,
+.qr-scan-window-close-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.qr-scan-back-btn-icon {
+  height: max-content;
+  width: 30px;
+  padding: 0;
+  fill: var(--g-color-secondary);
+}
+
+.qr-scan-window-close-btn {
+  color: white;
+}
+
+.qr-scan-header-title {
+  font-size: 1.125rem;
+  color: white;
+}
+
+.qr-scan-window-footer {
+  background-color: #333;
+  padding: 0.5rem 1rem;
+}
+
+@media only screen and (min-width: 650px) {
+  .scan-btn {
+    font-size: 1.375rem;
+  }
+}
