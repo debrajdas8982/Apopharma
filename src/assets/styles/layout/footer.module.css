@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  margin: 0 4rem;
+  border-top: 1px solid #333
+}
+
+.footer-brand {
+  font-size: smaller;
+  padding: 0.8rem 0
+}

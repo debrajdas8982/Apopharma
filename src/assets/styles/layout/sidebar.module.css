@@ -1,0 +1,125 @@
+/* stylelint-disable */
+.absolute {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 2;
+  color: white !important;
+  border: none !important;
+}
+
+.logo-container {
+  max-width: 80px;
+  outline: none;
+  border: none !important;
+  background-color: transparent;
+}
+
+.logo {
+  filter: brightness(0) invert(1);
+  width: 10rem;
+  height: auto;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #05a98b !important;
+  border: none !important;
+}
+
+.align-center {
+  align-self: center;
+}
+
+.align-right {
+  align-self: flex-end;
+}
+
+.menubtn {
+  border: none;
+  outline: none;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-color: #05a98b !important;
+  background: white;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  background-color: #05a98b !important;
+}
+
+.footer {
+  padding: 1em 0;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #05a98b !important;
+  font-size: small;
+  border-top: none !important;
+}
+
+.footer p {
+  font-size: 0.7rem;
+}
+
+.link {
+  margin-left: 1rem;
+}
+
+.link a {
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 1.2rem;
+}
+
+.alternate {
+  background: white;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  margin-left: 1rem;
+}
+
+.alternate a {
+  color: var(--g-color-secondary) !important;
+  font-weight: 600 !important;
+  font-size: 1.2rem;
+  background: white;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.active-icon {
+  color: var(--g-color-secondary);
+  background-color: white;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  margin-left: -1.5rem;
+  transition: all 0.4s;
+}
+
+.icon {
+  cursor: pointer;
+  height: 30px;
+  width: auto;
+}

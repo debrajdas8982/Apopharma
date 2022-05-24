@@ -1,0 +1,50 @@
+.feedback-greeting h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 22px;
+  color: #333;
+  margin: 1rem auto 1.25rem
+}
+
+.feedback-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #686868
+}
+
+.feedback-heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 22px;
+  margin-bottom: 0.2rem;
+  color: #333
+}
+
+.feedback-details {
+  background: #fff;
+  border: 1px solid #05a98b;
+  box-sizing: border-box;
+  box-shadow: 0 2px 1px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  font-size: 1rem
+}
+
+.button-container {
+  margin-bottom: 3rem
+}
+
+.container {
+  margin-top: 3rem;
+  max-width: 600px
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin-top: 0
+  }
+}

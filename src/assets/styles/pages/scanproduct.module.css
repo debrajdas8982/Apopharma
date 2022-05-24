@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem
+}
+
+.header {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1rem
+}
+
+.text {
+  width: 50%;
+  font-weight: 600;
+  font-style: semibold;
+  font-size: 1.2rem;
+  text-align: center
+}
+
+.line {
+  width: 60%;
+  margin: 1.5rem
+}

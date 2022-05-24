@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  width: 100%;
+  margin: auto
+}
+
+.header {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 24px;
+  margin-bottom: 2rem;
+  color: #333
+}
+
+.patient-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem
+}
+
+.patient-info div {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  margin-left: 1rem
+}
+
+.patient-info div h5 {
+  font-size: 1.2rem;
+  flex-basis: 17rem;
+  flex-grow: 0;
+  font-weight: 500;
+  color: #333
+}
+
+.patient-info div p {
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 1.2rem
+}
+
+.line {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem
+}
+
+.buttons-group {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  gap: 15rem
+}
+
+.remark-heading {
+  margin: 1rem;
+  font-size: 1.5rem;
+  text-align: center
+}
+
+.modal {
+  align-items: center
+}
+
+.feedback {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center
+}
+
+@media only screen and (max-width: 600px) {
+  .patient-info {
+    gap: 0.5rem
+  }
+
+  .patient-info div {
+    flex-direction: column;
+    margin-left: 1rem
+  }
+
+  .patient-info div h5 {
+    flex-basis: 0;
+    flex-grow: 0;
+    font-size: 1rem;
+    font-weight: 600
+  }
+
+  .patient-info div p {
+    font-size: 1rem
+  }
+
+  .header {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem
+  }
+
+  .line {
+    width: 88%;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem
+  }
+
+  .buttons-group {
+    gap: 3rem;
+    padding: 1rem
+  }
+}

@@ -1,0 +1,75 @@
+.button {
+  background-color: var(--g-color-primary);
+  padding: 0.4em;
+  border-radius: 4px;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 1.25rem;
+  outline: none;
+  border: 0.2em solid #d6d5d6;
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px #00000040;
+  white-space: nowrap
+}
+
+.button:hover {
+  background-color: var(--g-color-secondary);
+  color: white
+}
+
+.secondary {
+  background-color: var(--g-color-secondary)
+}
+
+.secondary:hover {
+  background-color: var(--g-color-primary)
+}
+
+.square {
+  border-radius: 0
+}
+
+.button [ disabled ] {
+  border: 1px solid #999;
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed
+}
+
+.button [ disabled ]:hover {
+  background-color: none
+}
+
+.invite {
+  outline: none;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+  width: 154px;
+  margin: 10px
+}
+
+.back {
+  width: 3rem;
+  height: 2rem;
+  border: none;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 1em;
+  border-radius: 1rem
+}
+
+.back:hover {
+  background: none;
+  color: var(--g-color-warning)
+}

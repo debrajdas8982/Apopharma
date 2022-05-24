@@ -1,0 +1,28 @@
+.divider {
+    display: flex;
+    height: 1px;
+    background-color: black;
+    margin: 1rem 0
+  }
+  
+  .faq-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600
+  }
+  
+  .accordion-label-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+  }
+  
+  .accordion-under-label {
+    border: 1px solid #05a98b;
+    width: 100%
+  }
+  
+  .faq-text {
+    max-width: 64rem
+  }
+  
