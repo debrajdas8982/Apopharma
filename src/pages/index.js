@@ -14,4 +14,4 @@ export default function Home() {
   )
 }
 
-Home.title = 'Pharmacist Dashboard'
+Home.title = 'Dashboard'

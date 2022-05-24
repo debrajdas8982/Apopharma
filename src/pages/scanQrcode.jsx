@@ -6,4 +6,4 @@ const ScanQRCode = () => {
 
 export default ScanQRCode
 
-ScanQRCode.title = 'Home'
+ScanQRCode.title = 'Scan Prescription'
