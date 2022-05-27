@@ -33,7 +33,7 @@
 }
 
 .scan-btn {
-  background-color: #a5e0d5;
+  background-color: #5da2e2;
   box-shadow: 0 4px 4px 0 #00000026;
   border-radius: 20px;
   border: none;
@@ -50,7 +50,7 @@
 }
 
 .scan-btn:hover {
-  background-color: #05a98b;
+  background-color: #2c7b96;
 }
 
 .search {

@@ -21,7 +21,7 @@ const Navbar = ({ title }) => {
     {
       id: 1,
       title: 'Profile',
-      href: '/'
+      href: '/profile'
     }
   ]
 

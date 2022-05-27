@@ -51,7 +51,7 @@ const QRScan = () => {
               </div>
 
               <small className={styles['qr-scan-camera-text']}>
-                Scan prescription QR code
+                Scan prescription 
               </small>
             </div>
 
@@ -84,7 +84,7 @@ const QRScan = () => {
         <QRCode value={scanCode} />
       </div>
       <div className={styles.search}>
-        <h4 className={styles.qr}>QR insert Code</h4>
+        <h4 className={styles.qr}>Enter Prescription Code Manually</h4>
         <div className={styles['input-container']}>
           <Input
             className={styles['search-input']}
@@ -93,7 +93,7 @@ const QRScan = () => {
             onChange={(e) => setScanCode(e.target.value)}
             placeholder='Enter QR code here...'
           />
-          <IoSearchOutline size={24} className={styles.icon} />
+          {/* <IoSearchOutline size={24} className={styles.icon} /> */}
         </div>
       </div>
     </div>

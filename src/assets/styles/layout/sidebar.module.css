@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #05a98b !important;
+  background-color: #5da2e2 !important;
   border: none !important;
 }
 
@@ -59,7 +59,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  background-color: #05a98b !important;
+  background-color: #5da2e2 !important;
   background: white;
 }
 
@@ -67,14 +67,14 @@
   display: flex;
   flex-direction: column;
   gap: 22px;
-  background-color: #05a98b !important;
+  background-color: #5da2e2 !important;
 }
 
 .footer {
   padding: 1em 0;
   text-align: center;
   text-transform: uppercase;
-  background-color: #05a98b !important;
+  background-color: #5da2e2 !important;
   font-size: small;
   border-top: none !important;
 }

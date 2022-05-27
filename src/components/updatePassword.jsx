@@ -1,17 +1,19 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useRef, useState } from 'react'
-import Image from 'next/image'
+
 import { useForm } from 'react-hook-form'
-import { Input } from '@mantine/core'
-import Carbon from '../assets/icons/carbonCertificate.svg'
-import Person from '../assets/icons/person.svg'
-import EmailIcon from '../assets/icons/emailIcon.svg'
-import TelPerson from '../assets/icons/telPerson.svg'
+import { Input, Button, UnstyledButton } from '@mantine/core'
+import { BsEyeFill, BsEyeSlashFill } from 'react-icons/bs'
 import styles from '../assets/styles/components/updatepassword.module.css'
-import GroupOfPersons from '../assets/icons/groupOfPersons.svg'
+
+
+import buttonStyle from '../components/core/buttonStyle'
 
 const UpdatePassword = () => {
   const [message, setMessage] = useState('')
+  const [passwordShow1, setPasswordShow1] = useState(true)
+  const [passwordShow2, setPasswordShow2] = useState(true)
+  const [passwordShow3, setPasswordShow3] = useState(true)
   const {
     register,
     reset,
@@ -27,92 +29,127 @@ const UpdatePassword = () => {
     reset()
   }
   return (
-    <div className={styles.container}>
-      <div className={styles.info}>
-        <div>
-          <Image src={Carbon} />
-          <h3>Title:</h3>
-          <p>Pharm.D</p>
-        </div>
-        <div>
-          <Image src={Person} />
-          <h3>Full name:</h3>
-          <p>Alice Jonas</p>
-        </div>
-        <div>
-          <Image src={EmailIcon} />
-          <h3>Email:</h3>
-          <p>alice.l@gmail.com</p>
-        </div>
-        <div>
-          <Image src={TelPerson} />
-          <h3>Phone number:</h3>
-          <p>+4676233650</p>
-        </div>
-        <div>
-          <Image src={GroupOfPersons} />
-          <h3>Role:</h3>
-          <p>Pharmacist</p>
-        </div>
-      </div>
+    // <div className={styles.container}>
 
-      <form
-        onSubmit={(e) => e.preventDefault()}
-        className={styles['password-details']}
+    //   <form
+        
+    //     className={styles['password-details']}
+    //   >
+    //     <div>
+    //       <h3 className={styles.text}>Change password</h3>
+
+    //       <Input
+    //         className={styles.pwd}
+    //         type='password'
+    //         {...register('password', {
+    //           required: 'You must specify a password',
+    //           minLength: {
+    //             value: 8,
+    //             message: 'Password must have at least 8 characters'
+    //           }
+    //         })}
+    //         placeholder='Enter current password..'
+    //       />
+    //       {errors.password && <p>{errors.password.message}</p>}
+
+    //       <Input
+    //         className={styles.pwd}
+    //         type='password'
+    //         {...register('password', {
+    //           required: 'You must specify a password',
+    //           minLength: {
+    //             value: 8,
+    //             message: 'Password must have at least 8 characters'
+    //           }
+    //         })}
+    //         placeholder='Enter new password..'
+    //       />
+    //       {errors.password && <p>{errors.password.message}</p>}
+
+    //       <Input
+    //         type='password'
+    //         {...register('confirm_password', {
+    //           validate: (value) =>
+    //             value === password.current || 'The passwords do not match'
+    //         })}
+    //         className={styles.pwd}
+    //         placeholder='Confirm password..'
+    //       />
+    //       {errors.confirm_password && <p>{errors.confirm_password.message}</p>}
+    //       <Button sx={buttonStyle} type='submit'
+    //        onClick={handleSubmit(onSubmit)}>
+    //       {' '}
+    //       Change Password
+    //     </Button>
+    //     </div>
+    //   </form>
+    // </div>
+
+<div className={styles.container}>
+<form
+  className={styles['password-details']}
+  // onSubmit={handleSubmit(updatePassword)}
+>
+  <p className={styles.text}>Change password</p>
+  <Input
+    className={styles.pwd}
+    type={passwordShow1 ? 'password' : null}
+    {...register('current_password')}
+    placeholder='Enter current password...'
+    required
+    rightSection={
+      <UnstyledButton
+        onClick={() => {
+          setPasswordShow1(!passwordShow1)
+        }}
       >
-        <div>
-          <h3 className={styles.text}>Change password</h3>
-
-          <Input
-            className={styles.pwd}
-            type='password'
-            {...register('password', {
-              required: 'You must specify a password',
-              minLength: {
-                value: 8,
-                message: 'Password must have at least 8 characters'
-              }
-            })}
-            placeholder='Enter current password..'
-          />
-          {errors.password && <p>{errors.password.message}</p>}
-
-          <Input
-            className={styles.pwd}
-            type='password'
-            {...register('password', {
-              required: 'You must specify a password',
-              minLength: {
-                value: 8,
-                message: 'Password must have at least 8 characters'
-              }
-            })}
-            placeholder='Enter new password..'
-          />
-          {errors.password && <p>{errors.password.message}</p>}
-
-          <Input
-            type='password'
-            {...register('confirm_password', {
-              validate: (value) =>
-                value === password.current || 'The passwords do not match'
-            })}
-            className={styles.pwd}
-            placeholder='Confirm password..'
-          />
-          {errors.confirm_password && <p>{errors.confirm_password.message}</p>}
-
-          <Input
-            type='submit'
-            onClick={handleSubmit(onSubmit)}
-            className={styles.submit}
-            // placeholder='Change password'
-            value='Change password'
-          />
-        </div>
-      </form>
-      <div> {message} </div>
-    </div>
+        {passwordShow1 ? <BsEyeSlashFill /> : <BsEyeFill />}
+      </UnstyledButton>
+    }
+  />
+  {errors.password && <p>{errors.password.message}</p>}
+  <Input
+    className={styles.pwd}
+    type={passwordShow2 ? 'password' : null}
+    {...register('password')}
+    placeholder='Enter new password...'
+    required
+    rightSection={
+      <UnstyledButton
+        onClick={() => {
+          setPasswordShow2(!passwordShow2)
+        }}
+      >
+        {passwordShow2 ? <BsEyeSlashFill /> : <BsEyeFill />}
+      </UnstyledButton>
+    }
+  />
+  {errors.password && <p>{errors.password.message}</p>}
+  <Input
+    className={styles.pwd}
+    type={passwordShow3 ? 'password' : null}
+    {...register('confirm_password')}
+    placeholder='Confirm new password...'
+    required
+    rightSection={
+      <UnstyledButton
+        onClick={() => {
+          setPasswordShow3(!passwordShow3)
+        }}
+      >
+        {passwordShow3 ? <BsEyeSlashFill /> : <BsEyeFill />}
+      </UnstyledButton>
+    }
+  />
+  {errors.password && <p>{errors.password.message}</p>}
+  <div>
+    <Button sx={buttonStyle} type='submit'
+    onClick={handleSubmit(onSubmit)}>
+      Change password
+    </Button>
+  </div>
+</form>
+</div>
   )
 }
 
