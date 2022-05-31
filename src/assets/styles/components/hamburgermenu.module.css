@@ -1,22 +1,48 @@
 .menu-item {
   background: transparent;
   background: none;
+  margin: 0.5em;
+  margin-left: 2rem;
   color: inherit;
   border: none;
-  padding: 0;
   font: inherit;
+  font-size: 1.2rem;
+  text-transform: uppercase;
   cursor: pointer;
   outline: inherit;
   box-shadow: none;
-  max-width: max-content
+  max-width: max-content;
+  padding: 0.1rem 1rem
+}
+
+.menu-item-active {
+  display: flex;
+  background-color: rgb(0 0 0 / 47%);
+  padding: 0.1rem 1rem;
+  border-radius: 0.8rem;
+  width: max-content;
+  margin: 0.5em 2rem;
+  color: inherit;
+  border: none;
+  font: inherit;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: inherit;
+  box-shadow: none
 }
 
 .menu-item:hover {
   display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: -1rem;
-  background: rgb(0 0 0 / 47%);
-  border-radius: 22px;
+  background-color: rgb(0 0 0 / 47%);
+  padding: 0.1rem 1rem;
+  border-radius: 0.8rem;
   width: max-content
+}
+
+.spacer {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  box-shadow: none
 }
