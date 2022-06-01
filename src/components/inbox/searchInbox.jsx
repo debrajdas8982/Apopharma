@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { Textarea } from '@mantine/core';
+import { Textarea, Input } from '@mantine/core';
 import List from "./List";
 import styles from '../../assets/styles/components/searchInbox.module.css'
 
@@ -13,14 +13,13 @@ function SearchInbox() {
 
   return (
     <div className={styles.main}>
-      <h1>React Search</h1>
+      <h2>Inbox</h2>
       <div className={styles.search}>
-        <Textarea
+        <Input
+           className={styles['inbox-details']}
           id="outlined-basic"
           onChange={inputHandler}
-          variant="outlined"
-          fullWidth
-          label="Search"
+          placeholder='Search...'
         />
       </div>
       <List input={inputText} />

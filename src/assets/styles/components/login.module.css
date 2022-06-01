@@ -1,5 +1,25 @@
 .login-wrapper {
     display: flex;
     flex-direction: column;
+    width: 40%;
     align-items: center;
+    margin: auto;
+    margin-top: 6rem;
+    background: rgb(209, 138, 138);
+    border: 1px solid rgb(0 0 0 / 20%);
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 50%);
+    border-radius: 5px
+}
+
+.buttonM {
+    margin-top: 0.5rem   
+}
+
+.heading{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
 }

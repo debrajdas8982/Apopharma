@@ -1,35 +1,3 @@
-// import { useState } from 'react'
-// // import { Button } from '@mantine/core'
-// import styles from '../../assets/styles/components/support.module.css'
-// // import ButtonStyle from '../core/buttonStyle'
-// // eslint-disable-next-line import/no-cycle
-// import ContactForm from './contactForms'
-// import Button from '../interactive/button'
-
-// const Thankyou = ({ value }) => {
-//   const [page, setPage] = useState(false)
-//   const [typeValue, setTypeValue] = useState(value)
-//   const handleClick = () => {
-//     setPage(true)
-//     setTypeValue(value)
-//   }
-//   console.log(value)
-//   console.log(typeValue)
-
-//   return !page ? (
-//     <div className={styles['thank-container']}>
-//       <p>Thank you for contacting. We will get back to you ASAP</p>
-//       <div className={styles.back}>
-//         <Button onClick={handleClick}>Go Back</Button>
-//       </div>
-//     </div>
-//   ) : (
-//     <ContactForm type={typeValue} />
-//   )
-// }
-
-// export default Thankyou
-
 import { useState } from 'react'
 import { Button, MediaQuery } from '@mantine/core'
 import { useRouter } from 'next/router'

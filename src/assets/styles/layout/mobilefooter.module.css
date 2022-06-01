@@ -4,7 +4,6 @@
 }
 
 .l-footer-wrapper {
-  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -13,22 +12,6 @@
   padding: 0.9rem 0 2rem;
   margin-top: 1.5rem;
   max-width: 20rem
-}
-
-.l-footer-leaves-wrapper {
-  width: inherit
-}
-
-.l-footer-leaf-one {
-  position: relative;
-  left: 21%;
-  top: 1px
-}
-
-.l-footer-leaf-two {
-  position: relative;
-  left: 75%;
-  top: 2px
 }
 
 .l-footer-invite-wrapper {
@@ -116,4 +99,14 @@
 
 .l-footer-copyright-brand {
   text-align: center
+}
+
+.l-footer-social-media-links {
+  color: var(--g-color-secondary);
+  display: flex;
+  gap: 0.8rem
+}
+
+.l-footer-icon {
+  size: 90em
 }

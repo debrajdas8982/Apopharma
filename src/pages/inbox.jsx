@@ -8,9 +8,9 @@ export default function Inbox() {
       <div className={styles['left-side']}>
         <SearchInbox />
       </div>
-      <div className={styles['right-side']}>
+      {/* <div className={styles['right-side']}>
         <h1>INBOX RIGHT</h1>
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import { React, useState } from 'react'
 import data from "./messageData.json"
+import styles from '../../assets/styles/components/searchInbox.module.css'
 
 function List(props) {
     const filteredData = data.filter((el) => {
@@ -10,11 +11,17 @@ function List(props) {
         }
     })
     return (
-        <ul>
+        <div>
             {filteredData.map((item) => (
-                <li key={item.id}>{item.sender_name}{item.subject}</li>
+                <li 
+                className={styles.list}
+                key={item.id}>
+                {item.sender_name}
+                <br />
+                {item.text}
+                </li>
             ))}
-        </ul>
+        </div>
     )
 }
 

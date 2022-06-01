@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import {Input, Button} from '@mantine/core'
+import buttonStyle from '../components/core/buttonStyle'
 import styles from '../assets/styles/components/login.module.css';
 
 async function loginUser(credentials) {
@@ -31,15 +33,18 @@ export default function Login({ setToken }) {
       <h1>Please Log In</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          <p>Username</p>
-          <input type="text" onChange={e => setUserName(e.target.value)} />
+          <p className={styles.heading}>Username</p>
+          <Input type="text" onChange={e => setUserName(e.target.value)} />
         </label>
         <label>
-          <p>Password</p>
-          <input type="password" onChange={e => setPassword(e.target.value)} />
+          <p className={styles.heading}>Password</p>
+          <Input type="password" onChange={e => setPassword(e.target.value)} />
         </label>
-        <div>
-          <button type="submit">Submit</button>
+        <div className = {styles.buttonM}>
+          <Button sx={buttonStyle} type="submit">
+          {' '}
+            Submit
+            </Button>
         </div>
       </form>
     </div>
