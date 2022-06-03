@@ -5,11 +5,7 @@ import Inbox from '../../pages/inbox'
 
 
 const Dashboard = () => {
-  // const [token, setToken] = useState();
 
-  // if(!token) {
-  //   return <Login setToken={setToken} />
-  // }
   return (
     <div className={styles.container}>
       <div className={styles['left-side']}>

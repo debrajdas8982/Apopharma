@@ -91,7 +91,7 @@ const QRScan = () => {
             value={scanCode}
             name='scanPrescription'
             onChange={(e) => setScanCode(e.target.value)}
-            placeholder='Enter QR code here...'
+            placeholder='Enter Prescription Code here...'
           />
           {/* <IoSearchOutline size={24} className={styles.icon} /> */}
         </div>
