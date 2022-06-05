@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 import data from "./messageData.json"
 import styles from '../../assets/styles/components/searchInbox.module.css'
 
@@ -7,7 +7,7 @@ function List(props) {
         if (props.input === '') {
             return el;
         } else {
-            return el.subject.toLowerCase().includes(props.input)
+            return el.text.toLowerCase().includes(props.input)
         }
     })
     return (
@@ -19,6 +19,8 @@ function List(props) {
                 {item.sender_name}
                 <br />
                 {item.text}
+                <br />
+                {item.date}
                 </li>
             ))}
         </div>
